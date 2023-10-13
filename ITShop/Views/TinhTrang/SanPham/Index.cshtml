@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ITShop.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<div class="card">
+    <h5 class="card-header">@ViewData["Title"]</h5>
+    <div class="card-body">
+        <p><a asp-action="Create" class="btn btn-success"><i class="fa-light fa-plus"></i> Thêm mới</a></p>
+        <table class="table table-sm table-hover table-striped table-bordered mb-0">
+            <thead>
+                <tr>
+                    <th width="5%">#</th>
+                    <th>@Html.DisplayNameFor(model => model.HinhAnh)</th>
+                    <th>@Html.DisplayNameFor(model => model.LoaiSanPham.TenLoai)</th>
+                    <th>@Html.DisplayNameFor(model => model.HangSanXuat.TenHangSanXuat)</th>
+                    <th>@Html.DisplayNameFor(model => model.TenSanPham)</th>
+                    <th>@Html.DisplayNameFor(model => model.SoLuong)</th>
+                    <th>@Html.DisplayNameFor(model => model.DonGia)</th>
+                    <th width="5%">Sửa</th>
+                    <th width="5%">Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ var stt = 1; }
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>@stt</td>
+                        <td class="text-center"><img src="~/@item.HinhAnh" width="60" class="img-thumbnail" /></td>
+                        <td>@Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoai)</td>
+                        <td>@Html.DisplayFor(modelItem => item.HangSanXuat.TenHangSanXuat)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TenSanPham)</td>
+                        <td class="text-end">@Html.DisplayFor(modelItem => item.SoLuong)</td>
+                        <td class="text-end">@Html.DisplayFor(modelItem => item.DonGia)</td>
+                        <td class="text-center"><a asp-action="Edit" asp-route-id="@item.ID"><i class="fa-light fa-pen-to-square"></i></a></td>
+                        <td class="text-center"><a asp-action="Delete" asp-route-id="@item.ID"><i class="fa-light fa-trash-can text-danger"></i></a></td>
+                    </tr>
+                    stt++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
