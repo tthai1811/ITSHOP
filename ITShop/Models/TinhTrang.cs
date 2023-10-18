@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ITShop.Models
 {
@@ -6,7 +7,9 @@ namespace ITShop.Models
     {
         public int ID { get; set; }
         [StringLength(255)]
-        public string MoTa { get; set; }
+		[Required(ErrorMessage = "không được bỏ trống!")]
+		[DisplayName("Mô tả")]
+		public string MoTa { get; set; }
         public ICollection<DatHang>? DatHang { get; set; }
 
     }

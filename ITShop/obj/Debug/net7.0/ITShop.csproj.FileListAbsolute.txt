@@ -254,3 +254,4 @@ D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Works
 D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\libman.json
 D:\Downloads\ITShop\ITShop\obj\Debug\net7.0\scopedcss\Views\TinhTrang\Shared\_Layout.cshtml.rz.scp.css
+D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\Slugify.Core.dll

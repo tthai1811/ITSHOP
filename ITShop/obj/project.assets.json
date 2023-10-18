@@ -2292,6 +2292,19 @@
           }
         }
       },
+      "Slugify.Core/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Slugify.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Slugify.Core.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7283,6 +7296,20 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "Slugify.Core/4.0.1": {
+      "sha512": "0YKMECQGdi7O4T1SL1IFaXWSPJdXNFMoGUdxMPsqI+TBuKlhiTD7mBxRH8gd9WD3MJSTEqyF0WsGl7l+NpoXXA==",
+      "type": "package",
+      "path": "slugify.core/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/netstandard2.0/Slugify.Core.dll",
+        "slugify.core.4.0.1.nupkg.sha512",
+        "slugify.core.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -11240,7 +11267,8 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.10"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.10",
+      "Slugify.Core >= 4.0.1"
     ]
   },
   "packageFolders": {
@@ -11299,6 +11327,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.10, )"
+          },
+          "Slugify.Core": {
+            "target": "Package",
+            "version": "[4.0.1, )"
           }
         },
         "imports": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KK3Ov7BhVKVFB/39YuAU6YsX57eyhHtD3+dfBDCCw6CdAe08jH0LunnRFqT9/dhrSvjeYLdXZDtWMT/jBwEM/A==",
+  "dgSpecHash": "xvqu+7oWD2OutQCIPVZbeM+ch95JTVP2RFYhjbGinEQ4RncC2+KiNqsAYhQzvFXYGPWGDuPDRofQewzz8jDeLg==",
   "success": true,
   "projectFilePath": "D:\\Downloads\\ITShop\\ITShop\\ITShop.csproj",
   "expectedPackageFiles": [
@@ -143,6 +143,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\slugify.core\\4.0.1\\slugify.core.4.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

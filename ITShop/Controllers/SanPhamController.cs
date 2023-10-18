@@ -6,16 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
+using Slugify;
+using Microsoft.Extensions.Hosting;
 
 namespace ITShop.Controllers
 {
     public class SanPhamController : Controller
     {
         private readonly ITShopDbContext _context;
-
-        public SanPhamController(ITShopDbContext context)
+        private readonly IWebHostEnvironment _hostEnvironment;
+        public SanPhamController(ITShopDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: SanPham
@@ -58,10 +61,32 @@ namespace ITShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,HangSanXuatID,LoaiSanPhamID,TenSanPham,DonGia,SoLuong,HinhAnh,MoTa")] SanPham sanPham)
+        public async Task<IActionResult> Create([Bind("ID,HangSanXuatID,LoaiSanPhamID,TenSanPham,DonGia,SoLuong,DuLieuHinhAnh,MoTa")] SanPham sanPham)
         {
             if (ModelState.IsValid)
             {
+                string path = "";
+                // Nếu hình ảnh không bỏ trống thì upload
+                if (sanPham.DuLieuHinhAnh != null)
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string folder = "/uploads/";
+                    string fileExtension = Path.GetExtension(sanPham.DuLieuHinhAnh.FileName).ToLower();
+
+                    string fileName = sanPham.TenSanPham;
+                    SlugHelper slug = new SlugHelper();
+
+                    string fileNameSluged = slug.GenerateSlug(fileName);
+                    path = fileNameSluged + fileExtension;
+                    string physicalPath = Path.Combine(wwwRootPath + folder, fileNameSluged + fileExtension);
+
+                    using (var fileStream = new FileStream(physicalPath, FileMode.Create))
+                    {
+                        await sanPham.DuLieuHinhAnh.CopyToAsync(fileStream);
+                    }
+                }
+                // Cập nhật đường dẫn vào CSDL
+                sanPham.HinhAnh = path ?? null;
                 _context.Add(sanPham);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -94,7 +119,7 @@ namespace ITShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,HangSanXuatID,LoaiSanPhamID,TenSanPham,DonGia,SoLuong,HinhAnh,MoTa")] SanPham sanPham)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,HangSanXuatID,LoaiSanPhamID,TenSanPham,DonGia,SoLuong,DuLieuHinhAnh,MoTa")] SanPham sanPham)
         {
             if (id != sanPham.ID)
             {
@@ -103,9 +128,33 @@ namespace ITShop.Controllers
 
             if (ModelState.IsValid)
             {
+
                 try
                 {
+                    string path = "";
+                    if (sanPham.DuLieuHinhAnh != null)
+                    {
+                        string wwwRootPath = _hostEnvironment.WebRootPath;
+                        string folder = "/uploads/";
+                        string fileExtension = Path.GetExtension(sanPham.DuLieuHinhAnh.FileName).ToLower();
+
+                        string fileName = sanPham.TenSanPham;
+                        SlugHelper slug = new SlugHelper();
+                        string fileNameSluged = slug.GenerateSlug(fileName);
+                        path = fileNameSluged + fileExtension;
+
+                        string physicalPath = Path.Combine(wwwRootPath + folder, fileNameSluged + fileExtension);
+
+                        using (var fileStream = new FileStream(physicalPath, FileMode.Create))
+                        {
+                            await sanPham.DuLieuHinhAnh.CopyToAsync(fileStream);
+                        }
+                    }
                     _context.Update(sanPham);
+                    if (string.IsNullOrEmpty(path))
+                        _context.Entry(sanPham).Property(x => x.HinhAnh).IsModified = false;
+                    else
+                        sanPham.HinhAnh = path;
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -158,6 +207,12 @@ namespace ITShop.Controllers
             var sanPham = await _context.SanPham.FindAsync(id);
             if (sanPham != null)
             {
+                // Xóa hình ảnh (nếu có)
+                if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                {
+                    var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "uploads", sanPham.HinhAnh);
+                    if (System.IO.File.Exists(imagePath)) System.IO.File.Delete(imagePath);
+                }
                 _context.SanPham.Remove(sanPham);
             }
             
