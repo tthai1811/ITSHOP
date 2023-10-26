@@ -4,37 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ITShop</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-    
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />    
     <link rel="stylesheet" href="~/lib/font-awesome/css/css/all.min.css" />
+    @await RenderSectionAsync("Styles", required: false)
+
 </head>
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-info mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house fa-fw"></i> ITShop</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-light fa-cart-shopping"></i> ITShop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="LoaiSanPham" asp-action="Index"><i class="fa-solid fa-list fa-fw"></i> Loại sản phẩm</a>
+                            <a class="nav-link" asp-area="" asp-controller="LoaiSanPham" asp-action="Index"><i class="fa-light fa-diagram-project fa-fw"></i> Loại sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HangSanXuat" asp-action="Index"><i class="fa-solid fa-shop fa-fw"></i> Hãng sản xuất</a>
+                            <a class="nav-link" asp-area="" asp-controller="HangSanXuat" asp-action="Index"><i class="fa-light fa-copyright fa-fw"></i> Hãng sản xuất</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="SanPham" asp-action="Index"><i class="fa-brands fa-microsoft fa-fw"></i> Sản phẩm</a>
+                            <a class="nav-link" asp-area="" asp-controller="SanPham" asp-action="Index"><i class="fa-light fa-box fa-fw"></i> Sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="NguoiDung" asp-action="Index"><i class="fa-solid fa-user fa-fw"></i> Người dùng</a>
+                            <a class="nav-link" asp-area="" asp-controller="NguoiDung" asp-action="Index"><i class="fa-light fa-users fa-fw"></i> Người dùng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="TinhTrang" asp-action="Index"><i class="fa-solid fa-circle-exclamation fa-fw"></i> Tình trạng</a>
+                            <a class="nav-link" asp-area="" asp-controller="TinhTrang" asp-action="Index"><i class="fa-light fa-list-check fa-fw"></i> Tình trạng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="DatHang" asp-action="Index"><i class="fa-solid fa-truck fa-fw"></i> Đặt hàng</a>
+                            <a class="nav-link" asp-area="" asp-controller="DatHang" asp-action="Index"><i class="fa-light fa-file-invoice fa-fw"></i> Đặt hàng</a>
                         </li>
                     </ul>
                 </div>

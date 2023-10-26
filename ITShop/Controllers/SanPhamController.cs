@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
 using Slugify;
+using System.Linq.Dynamic.Core;
 using Microsoft.Extensions.Hosting;
 
 namespace ITShop.Controllers
@@ -24,12 +25,77 @@ namespace ITShop.Controllers
         // GET: SanPham
         public async Task<IActionResult> Index()
         {
-            var iTShopDbContext = _context.SanPham.Include(s => s.HangSanXuat).Include(s => s.LoaiSanPham);
-            return View(await iTShopDbContext.ToListAsync());
-        }
 
-        // GET: SanPham/Details/5
-        public async Task<IActionResult> Details(int? id)
+            return View();
+        }
+        public IActionResult Index_LoadData()
+        {
+            try
+            {
+                var draw = Request.Form["draw"].FirstOrDefault();
+                var start = Request.Form["start"].FirstOrDefault();
+                var length = Request.Form["length"].FirstOrDefault();
+                var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
+                var sortColumnDirection = Request.Form["order[0][dir]"].FirstOrDefault();
+                var searchValue = Request.Form["search[value]"].FirstOrDefault();
+
+                int pageSize = length != null ? int.Parse(length) : 0;
+                int skip = start != null ? int.Parse(start) : 0;
+                int totalRecords = 0;
+                int filterRecords = 0;
+
+                var sanPham = from r in _context.SanPham
+                              select new
+                              {
+                                  ID = r.ID,
+                                  HinhAnh = r.HinhAnh,
+                                  TenLoai = r.LoaiSanPham.TenLoai,
+                                  TenHangSanXuat = r.HangSanXuat.TenHangSanXuat,
+                                  TenSanPham = r.TenSanPham,
+                                  SoLuong = r.SoLuong,
+                                  DonGia = r.DonGia
+                              };
+
+                totalRecords = sanPham.Count();
+
+                // Sắp xếp
+                if (!string.IsNullOrEmpty(sortColumn) && !string.IsNullOrEmpty(sortColumnDirection))
+                {
+                    sanPham = sanPham.OrderBy(sortColumn + " " + sortColumnDirection);
+                }
+
+                // Tìm kiếm
+                if (!string.IsNullOrEmpty(searchValue) && !string.IsNullOrWhiteSpace(searchValue))
+                {
+                    sanPham = sanPham.Where(r => r.TenLoai.Contains(searchValue) ||
+                    r.TenHangSanXuat.Contains(searchValue) ||
+                   r.TenSanPham.Contains(searchValue) ||
+                   r.SoLuong.ToString().Contains(searchValue) ||
+                   r.DonGia.ToString().Contains(searchValue));
+                }
+
+                filterRecords = sanPham.Count();
+                var data = sanPham.Skip(skip).Take(pageSize).ToList();
+                var jsonData = new
+                {
+                    draw = draw,
+                    recordsFiltered = filterRecords,
+                    recordsTotal = totalRecords,
+                    data = data
+                };
+
+                return Json(jsonData, new System.Text.Json.JsonSerializerOptions());
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+    
+
+
+    // GET: SanPham/Details/5
+    public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.SanPham == null)
             {
@@ -65,7 +131,7 @@ namespace ITShop.Controllers
         {
             if (ModelState.IsValid)
             {
-                string path = "";
+                string path = "Server=DESKTOP-VPSR0NB\\\\SQLEXPRESS;Database=ITShop;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
                 // Nếu hình ảnh không bỏ trống thì upload
                 if (sanPham.DuLieuHinhAnh != null)
                 {

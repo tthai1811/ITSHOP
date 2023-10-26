@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using BC = BCrypt.Net.BCrypt;
 using ITShop.Models;
 
 namespace ITShop.Controllers
@@ -59,7 +60,8 @@ namespace ITShop.Controllers
         {
             if (ModelState.IsValid)
             {
-                nguoiDung.XacNhanMatKhau = nguoiDung.MatKhau;
+                nguoiDung.MatKhau = BC.HashPassword(nguoiDung.MatKhau);
+                nguoiDung.XacNhanMatKhau = BC.HashPassword(nguoiDung.MatKhau);
                 _context.Add(nguoiDung);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -120,7 +122,9 @@ namespace ITShop.Controllers
                         n.DienThoai = nguoiDung.DienThoai;
                         n.DiaChi = nguoiDung.DiaChi;
                         n.TenDangNhap = nguoiDung.TenDangNhap;
-                        n.MatKhau = nguoiDung.MatKhau;
+                        n.MatKhau = BC.HashPassword(nguoiDung.MatKhau);
+                        n.XacNhanMatKhau = BC.HashPassword(nguoiDung.MatKhau);
+
                         n.XacNhanMatKhau = nguoiDung.XacNhanMatKhau;
                         n.Quyen = nguoiDung.Quyen;
                     }

@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
-    },
-    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
     },
@@ -29,180 +25,64 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\ckeditor5\\ckeditor.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor5\\ckeditor.js"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\ckeditor5\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\lib\\ckeditor5\\ckeditor.js.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\ckeditor5\\index.html",
+      "PackagePath": "staticwebassets\\lib\\ckeditor5\\index.html"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
@@ -397,8 +277,404 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
     },
     {
-      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\combo-sieu-cap.jpg",
-      "PackagePath": "staticwebassets\\uploads\\combo-sieu-cap.jpg"
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\Nokia 8210-do-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Nokia 8210-do-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\Samsung-Galaxy-S21-FE-vang-1-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Samsung-Galaxy-S21-FE-vang-1-2-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\Xiaomi-12-xam-thumb-mau-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Xiaomi-12-xam-thumb-mau-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iPhone-14-plus-thumb-xanh-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iPhone-14-plus-thumb-xanh-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iPhone-14-thumb-tim-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iPhone-14-thumb-tim-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-11-trang-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-11-trang-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-12-xanh-la-new-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-12-xanh-la-new-2-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-13-pink-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-13-pink-2-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-14-pro-max-tim-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-14-pro-max-tim-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-15-plus-128gb-xanh-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-15-plus-128gb-xanh-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-15-pro-gold-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-15-pro-gold-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-15-pro-max-blue-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-15-pro-max-blue-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-15-pro-max-white-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-15-pro-max-white-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-15-xanh-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone-15-xanh-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone11.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone12.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone13.jpg",
+      "PackagePath": "staticwebassets\\uploads\\iphone13.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\itel-it9010-thumb-1-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\itel-it9010-thumb-1-2-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\itel-it9210-black-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\itel-it9210-black-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\itel-l6502-den-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\itel-l6502-den-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\masstel-fami-60-thumb-600x600.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\masstel-fami-60-thumb-600x600.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\masstel-izi-10-4g-xanh-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\masstel-izi-10-4g-xanh-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\masstel-izi-26-4g-thum-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\masstel-izi-26-4g-thum-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\masstel-lux-10-vang-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\masstel-lux-10-vang-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\masstel-lux-20-thumb-600x600.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\masstel-lux-20-thumb-600x600.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-f209-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-f209-den-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-f309-red-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-f309-red-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-m239-do-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-m239-do-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-m331-thumb-xanh-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-m331-thumb-xanh-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-m539-do-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-m539-do-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\mobell-rock-4-xanh-duong-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mobell-rock-4-xanh-duong-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\nokia-105-4g-blue-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nokia-105-4g-blue-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\nokia-110-4g-blue-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nokia-110-4g-blue-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\nokia-215-xanh-ngoc-new-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nokia-215-xanh-ngoc-new-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a17-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a17-den-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a17k-vang-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a17k-vang-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a38.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a38.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a57-xanh-thumb-1-600x600.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a57-xanh-thumb-1-600x600.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a58-4g.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a58-4g.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a77s-den-thumb-1-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a77s-den-thumb-1-2-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a78-xanh-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a78-xanh-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-a98-5g.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-a98-5g.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-find-n2-flip-purple-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-find-n2-flip-purple-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-find-x5-pro-trang-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-find-x5-pro-trang-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno10-blue-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno10-blue-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno10-pro-grey-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno10-pro-grey-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno10-pro-plus-thumbnew-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno10-pro-plus-thumbnew-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno7-z-5g-thumb-2-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno7-z-5g-thumb-2-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno8-pro-thumb-den-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno8-pro-thumb-den-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno8t-4g-den1-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno8t-4g-den1-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\oppo-reno8t-vang1-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\oppo-reno8t-vang1-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-10-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-10-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-11-128gb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-11-128gb.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-11-pro-plus-5g.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-11-pro-plus-5g.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-11-pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-11-pro.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-c30s-3gb-64gb-blue-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-c30s-3gb-64gb-blue-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-c51.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-c51.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-c53-gold-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-c53-gold-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\realme-c55.jpg",
+      "PackagePath": "staticwebassets\\uploads\\realme-c55.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a04-thumb-xanh-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a04-thumb-xanh-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a04s-thumb-den-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a04s-thumb-den-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a05-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a05-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a05s-den-thumb-1-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a05s-den-thumb-1-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a14-5g-thumb-nau-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a14-5g-thumb-nau-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a14.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a14.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a24.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a24.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a34-thumb-den-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a34-thumb-den-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-a54-thumb-tim-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-a54-thumb-tim-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-m34-xanh-ngoc-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-m34-xanh-ngoc-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-s22-ultra-thumb.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-s22-ultra-thumb.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-s23-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-s23-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-s23-fe.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-s23-fe.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-s23-plus-3-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-s23-plus-3-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-s23-ultra-thumb-xanh-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-s23-ultra-thumb-xanh-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-z-flip4-5g-128gb-thumb-tim-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-z-flip4-5g-128gb-thumb-tim-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-z-flip5-kem-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-z-flip5-kem-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-z-fold4-kem-256gb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-z-fold4-kem-256gb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\samsung-galaxy-z-fold5- kem-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\samsung-galaxy-z-fold5- kem-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivi-y01-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivi-y01-den-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-v25-5g-vang-thumb-1-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-v25-5g-vang-thumb-1-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-v25-pro-5g-xanh-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-v25-pro-5g-xanh-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-v27e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-v27e.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y02s-thumb-xanh-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y02s-thumb-xanh-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y02t-xanh-tim-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y02t-xanh-tim-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y16-vang-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y16-vang-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y17-tim-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y17-tim-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y22s-vang-thumb-1-2-600x600.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y22s-vang-thumb-1-2-600x600.jpeg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y35-thumb-den-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y35-thumb-den-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\vivo-y36-128gb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vivo-y36-128gb.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-13-lite-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-13-lite-den-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-13t-xanh-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-13t-xanh-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-13t-xanh-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-13t-xanh-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-12-4gb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-12-4gb.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-12-pro-4g-xanh-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-12-pro-4g-xanh-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-12c-green-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-12c-green-thumb-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-a2-xanh-duong-thumbnail-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-a2-xanh-duong-thumbnail-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-note-12-8gb-256gb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-note-12-8gb-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-note-12-pro-5g-momo-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-note-12-pro-5g-momo-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-note-12-pro-5g-tim-thumb-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-note-12-pro-5g-tim-thumb-1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\xiaomi-redmi-note12s-den-thumb-600x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\xiaomi-redmi-note12s-den-thumb-600x600.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ITShop.Microsoft.AspNetCore.StaticWebAssets.props",

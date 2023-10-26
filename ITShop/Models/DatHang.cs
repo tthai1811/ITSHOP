@@ -22,7 +22,7 @@ namespace ITShop.Models
 		public string DiaChiGiaoHang { get; set; }
 		[DisplayName("Ngày đặt hàng")]
 		[Required(ErrorMessage = " không được bỏ trống!")]
-		[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+		[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
 		public DateTime NgayDatHang { get; set; }
         public ICollection<DatHang_ChiTiet>? DatHang_ChiTiet { get; set; }
         public NguoiDung? NguoiDung { get; set; }

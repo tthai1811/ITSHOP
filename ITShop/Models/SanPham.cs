@@ -23,11 +23,11 @@ namespace ITShop.Models
 
 		[DisplayName("Đơn giá")]
 		[Required(ErrorMessage = " không được bỏ trống!")]
-		[DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+		[DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
 		public int DonGia { get; set; }
 
 
-		[DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+		[DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
 		[Required(ErrorMessage = " không được bỏ trống!")]
 		[DisplayName("Số Lượng")]
 		public int SoLuong { get; set; }
