@@ -9,9 +9,13 @@ using ITShop.Models;
 using Slugify;
 using System.Linq.Dynamic.Core;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace ITShop.Controllers
+namespace ITShop.Areas.Admin.Controllers
 {
+	[Authorize(Roles = "Admin")]
+	[Area("Admin")]
     public class SanPhamController : Controller
     {
         private readonly ITShopDbContext _context;
@@ -47,13 +51,13 @@ namespace ITShop.Controllers
                 var sanPham = from r in _context.SanPham
                               select new
                               {
-                                  ID = r.ID,
-                                  HinhAnh = r.HinhAnh,
-                                  TenLoai = r.LoaiSanPham.TenLoai,
-                                  TenHangSanXuat = r.HangSanXuat.TenHangSanXuat,
-                                  TenSanPham = r.TenSanPham,
-                                  SoLuong = r.SoLuong,
-                                  DonGia = r.DonGia
+                                  r.ID,
+                                  r.HinhAnh,
+                                  r.LoaiSanPham.TenLoai,
+                                  r.HangSanXuat.TenHangSanXuat,
+                                  r.TenSanPham,
+                                  r.SoLuong,
+                                  r.DonGia
                               };
 
                 totalRecords = sanPham.Count();
@@ -78,10 +82,10 @@ namespace ITShop.Controllers
                 var data = sanPham.Skip(skip).Take(pageSize).ToList();
                 var jsonData = new
                 {
-                    draw = draw,
+                    draw,
                     recordsFiltered = filterRecords,
                     recordsTotal = totalRecords,
-                    data = data
+                    data
                 };
 
                 return Json(jsonData, new System.Text.Json.JsonSerializerOptions());
@@ -91,11 +95,11 @@ namespace ITShop.Controllers
                 throw;
             }
         }
-    
 
 
-    // GET: SanPham/Details/5
-    public async Task<IActionResult> Details(int? id)
+
+        // GET: SanPham/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.SanPham == null)
             {
@@ -281,14 +285,14 @@ namespace ITShop.Controllers
                 }
                 _context.SanPham.Remove(sanPham);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SanPhamExists(int id)
         {
-          return (_context.SanPham?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.SanPham?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

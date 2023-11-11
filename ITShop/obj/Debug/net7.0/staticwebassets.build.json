@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S3TSnyujrASp3i6aks7bnIMehGxIi7UApcjfARZkkwg=",
+  "Hash": "rXRemKtdU6QAPH+4C6qcSbwFPn6FEPpO21jvkPo3gKM=",
   "Source": "ITShop",
   "BasePath": "_content/ITShop",
   "Mode": "Default",
@@ -1207,12 +1207,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone11.jpg",
+      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-hoodie-trang-de-thuong.jpg",
       "SourceId": "ITShop",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
       "BasePath": "_content/ITShop",
-      "RelativePath": "uploads/iphone11.jpg",
+      "RelativePath": "uploads/ao-hoodie-trang-de-thuong.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1221,7 +1221,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\iphone11.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\ao-hoodie-trang-de-thuong.jpg"
     },
     {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-11-trang-600x600.jpg",
@@ -1241,23 +1241,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\iphone-11-trang-600x600.jpg"
     },
     {
-      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone12.jpg",
-      "SourceId": "ITShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
-      "BasePath": "_content/ITShop",
-      "RelativePath": "uploads/iphone12.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\iphone12.jpg"
-    },
-    {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-12-xanh-la-new-2-600x600.jpg",
       "SourceId": "ITShop",
       "SourceType": "Discovered",
@@ -1273,23 +1256,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\iphone-12-xanh-la-new-2-600x600.jpg"
-    },
-    {
-      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone13.jpg",
-      "SourceId": "ITShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
-      "BasePath": "_content/ITShop",
-      "RelativePath": "uploads/iphone13.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\iphone13.jpg"
     },
     {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\iphone-13-pink-2-600x600.jpg",

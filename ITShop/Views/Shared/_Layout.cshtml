@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor _httpContextAccessor;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -20,23 +21,44 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="LoaiSanPham" asp-action="Index"><i class="fa-light fa-diagram-project fa-fw"></i> Loại sản phẩm</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="SanPhamNoiBat"><i class="fa-light fa-fw fa-chart-pie"></i> Sản phẩm nổi bật</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HangSanXuat" asp-action="Index"><i class="fa-light fa-copyright fa-fw"></i> Hãng sản xuất</a>
+
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="GioHang"><i class="fa-light fa-fw fa-shopping-cart"></i> Giỏ hàng</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="SanPham" asp-action="Index"><i class="fa-light fa-box fa-fw"></i> Sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="NguoiDung" asp-action="Index"><i class="fa-light fa-users fa-fw"></i> Người dùng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="TinhTrang" asp-action="Index"><i class="fa-light fa-list-check fa-fw"></i> Tình trạng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="DatHang" asp-action="Index"><i class="fa-light fa-file-invoice fa-fw"></i> Đặt hàng</a>
-                        </li>
+                        @if (!_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Login"><i class="fa-light fa-fw fa-sign-in-alt"></i> Đăng nhập</a>
+                            </li>
+                        }
+                        else
+                        {
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-light fa-user-circle"></i> @_httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "HoVaTen")?.Value
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="KhachHang" asp-action="DonHangCuaToi"><i class="fa-light fa-fw fa-file-chart-pie"></i> Đơn hàng của tôi</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="KhachHang" asp-action="DoiMatKhau"><i class="fa-light fa-fw fa-key"></i> Đổi mật khẩu</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Logout"><i class="fa-light fa-fw fa-sign-out-alt"></i> Đăng xuất</a></li>
+                                </ul>
+                            </li>
+
+                            @if (_httpContextAccessor.HttpContext.User.IsInRole("Admin"))
+
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="fa-light fa-fw fa-gear"></i> Khu vực quản trị</a>
+                                </li>
+                            }
+                        }
                     </ul>
                 </div>
             </div>

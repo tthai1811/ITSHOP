@@ -6,90 +6,94 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace ITShop.Controllers
+namespace ITShop.Areas.Admin.Controllers
 {
-    public class TinhTrangController : Controller
+	[Authorize(Roles = "Admin")]
+	[Area("Admin")]
+    public class LoaiSanPhamController : Controller
     {
         private readonly ITShopDbContext _context;
 
-        public TinhTrangController(ITShopDbContext context)
+        public LoaiSanPhamController(ITShopDbContext context)
         {
             _context = context;
         }
 
-        // GET: TinhTrang
+        // GET: LoaiSanPham
         public async Task<IActionResult> Index()
         {
-              return _context.KhachHang != null ? 
-                          View(await _context.KhachHang.ToListAsync()) :
-                          Problem("Entity set 'ITShopDbContext.KhachHang'  is null.");
+            return _context.LoaiSanPham != null ?
+                        View(await _context.LoaiSanPham.ToListAsync()) :
+                        Problem("Entity set 'ITShopDbContext.LoaiSanPham'  is null.");
         }
 
-        // GET: TinhTrang/Details/5
+        // GET: LoaiSanPham/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.KhachHang == null)
+            if (id == null || _context.LoaiSanPham == null)
             {
                 return NotFound();
             }
 
-            var tinhTrang = await _context.KhachHang
+            var loaiSanPham = await _context.LoaiSanPham
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (tinhTrang == null)
+            if (loaiSanPham == null)
             {
                 return NotFound();
             }
 
-            return View(tinhTrang);
+            return View(loaiSanPham);
         }
 
-        // GET: TinhTrang/Create
+        // GET: LoaiSanPham/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: TinhTrang/Create
+        // POST: LoaiSanPham/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,MoTa")] TinhTrang tinhTrang)
+        public async Task<IActionResult> Create([Bind("ID,TenLoai")] LoaiSanPham loaiSanPham)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(tinhTrang);
+                _context.Add(loaiSanPham);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(tinhTrang);
+            return View(loaiSanPham);
         }
 
-        // GET: TinhTrang/Edit/5
+        // GET: LoaiSanPham/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.KhachHang == null)
+            if (id == null || _context.LoaiSanPham == null)
             {
                 return NotFound();
             }
 
-            var tinhTrang = await _context.KhachHang.FindAsync(id);
-            if (tinhTrang == null)
+            var loaiSanPham = await _context.LoaiSanPham.FindAsync(id);
+            if (loaiSanPham == null)
             {
                 return NotFound();
             }
-            return View(tinhTrang);
+            return View(loaiSanPham);
         }
 
-        // POST: TinhTrang/Edit/5
+        // POST: LoaiSanPham/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,MoTa")] TinhTrang tinhTrang)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,TenLoai")] LoaiSanPham loaiSanPham)
         {
-            if (id != tinhTrang.ID)
+            if (id != loaiSanPham.ID)
             {
                 return NotFound();
             }
@@ -98,12 +102,12 @@ namespace ITShop.Controllers
             {
                 try
                 {
-                    _context.Update(tinhTrang);
+                    _context.Update(loaiSanPham);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TinhTrangExists(tinhTrang.ID))
+                    if (!LoaiSanPhamExists(loaiSanPham.ID))
                     {
                         return NotFound();
                     }
@@ -114,49 +118,49 @@ namespace ITShop.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(tinhTrang);
+            return View(loaiSanPham);
         }
 
-        // GET: TinhTrang/Delete/5
+        // GET: LoaiSanPham/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.KhachHang == null)
+            if (id == null || _context.LoaiSanPham == null)
             {
                 return NotFound();
             }
 
-            var tinhTrang = await _context.KhachHang
+            var loaiSanPham = await _context.LoaiSanPham
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (tinhTrang == null)
+            if (loaiSanPham == null)
             {
                 return NotFound();
             }
 
-            return View(tinhTrang);
+            return View(loaiSanPham);
         }
 
-        // POST: TinhTrang/Delete/5
+        // POST: LoaiSanPham/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.KhachHang == null)
+            if (_context.LoaiSanPham == null)
             {
-                return Problem("Entity set 'ITShopDbContext.KhachHang'  is null.");
+                return Problem("Entity set 'ITShopDbContext.LoaiSanPham'  is null.");
             }
-            var tinhTrang = await _context.KhachHang.FindAsync(id);
-            if (tinhTrang != null)
+            var loaiSanPham = await _context.LoaiSanPham.FindAsync(id);
+            if (loaiSanPham != null)
             {
-                _context.KhachHang.Remove(tinhTrang);
+                _context.LoaiSanPham.Remove(loaiSanPham);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TinhTrangExists(int id)
+        private bool LoaiSanPhamExists(int id)
         {
-          return (_context.KhachHang?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.LoaiSanPham?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

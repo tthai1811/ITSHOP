@@ -7,10 +7,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BC = BCrypt.Net.BCrypt;
 using ITShop.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace ITShop.Controllers
+namespace ITShop.Areas.Admin.Controllers
 {
-    public class NguoiDungController : Controller
+    [Area("Admin")]
+	[Authorize(Roles = "Admin")]
+	public class NguoiDungController : Controller
     {
         private readonly ITShopDbContext _context;
 
@@ -22,9 +26,9 @@ namespace ITShop.Controllers
         // GET: NguoiDung
         public async Task<IActionResult> Index()
         {
-              return _context.NguoiDung != null ? 
-                          View(await _context.NguoiDung.ToListAsync()) :
-                          Problem("Entity set 'ITShopDbContext.NguoiDung'  is null.");
+            return _context.NguoiDung != null ?
+                        View(await _context.NguoiDung.ToListAsync()) :
+                        Problem("Entity set 'ITShopDbContext.NguoiDung'  is null.");
         }
 
         // GET: NguoiDung/Details/5
@@ -180,14 +184,14 @@ namespace ITShop.Controllers
             {
                 _context.NguoiDung.Remove(nguoiDung);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool NguoiDungExists(int id)
         {
-          return (_context.NguoiDung?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.NguoiDung?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

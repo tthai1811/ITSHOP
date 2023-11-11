@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
-    [NotMapped]
-    public class NguoiDung_ChinhSua
+	[NotMapped]
+	public class NguoiDung_ChinhSua
 
     {
         public NguoiDung_ChinhSua() { }
         public NguoiDung_ChinhSua(NguoiDung n)
-
+                
         {
             ID = n.ID;
             HoVaTen = n.HoVaTen;
@@ -22,6 +22,11 @@ namespace ITShop.Models
             Quyen = n.Quyen;
 
         }
+
+
+
+
+
         public int ID { get; set; }
         [StringLength(100)]
         [Required(ErrorMessage = "Họ và tên không được bỏ trống!")]
@@ -94,5 +99,24 @@ namespace ITShop.Models
         public ICollection<DatHang>? DatHang { get; set; }
 
     }
-   
+
+    [NotMapped]
+    public class DangNhap
+    {
+        [StringLength(50, ErrorMessage = "{0} phải ít nhất {2} ký tự.", MinimumLength = 4)]
+        [Required(ErrorMessage = "Tên đăng nhập không được bỏ trống!")]
+        [DisplayName("Tên đăng nhập")]
+        public string TenDangNhap { get; set; }
+        [StringLength(255)]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Mật khẩu không được bỏ trống!")]
+        [DisplayName("Mật khẩu")]
+        public string MatKhau { get; set; }
+        [DisplayName("Duy trì đăng nhập")]
+        public bool DuyTriDangNhap { get; set; }
+
+        [StringLength(255)]
+        [DisplayName("Liên kết chuyển trang")]
+        public string? LienKetChuyenTrang { get; set; }
+    }
 }

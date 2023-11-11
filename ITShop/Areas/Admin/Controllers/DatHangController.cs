@@ -6,9 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace ITShop.Controllers
+namespace ITShop.Areas.Admin.Controllers
 {
+	[Authorize(Roles = "Admin")]
+	[Area("Admin")]
     public class DatHangController : Controller
     {
         private readonly ITShopDbContext _context;
@@ -160,14 +164,14 @@ namespace ITShop.Controllers
             {
                 _context.DatHang.Remove(datHang);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DatHangExists(int id)
         {
-          return (_context.DatHang?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.DatHang?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

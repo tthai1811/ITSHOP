@@ -87,7 +87,7 @@
             filter: true, // Hiển thị ô Tìm kiếm
             orderMulti: false, // Chỉ cho sắp xếp mỗi lần 1 cột
             ajax: {
-                url: '@Url.Action("Index_LoadData", "SanPham", new { area = "" })', // Hàm lấy dữ liệu Index_LoadData() bên trong SanPhamController
+                url: '@Url.Action("Index_LoadData", "SanPham", new { area = "Admin" })', // Hàm lấy dữ liệu Index_LoadData() bên trong SanPhamController
                 type: 'POST',
                 datatype: 'json'
             },

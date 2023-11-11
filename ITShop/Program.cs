@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ITShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ITShopConnection")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+.AddCookie(options =>
+{
+    options.Cookie.Name = "ITShop.Cookie";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(15);
+    options.SlidingExpiration = true;
+    options.LoginPath = "/Home/Login";
+    options.LogoutPath = "/Home/Logout";
+    options.AccessDeniedPath = "/Home/Forbidden";
+});
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,9 +33,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
-
+app.UseAuthentication();// xac thuc
+app.UseAuthorization();//phan quyen
+app.MapControllerRoute(name: "adminareas", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
