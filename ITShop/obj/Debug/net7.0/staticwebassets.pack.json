@@ -9,12 +9,120 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\css\\theme.css",
+      "PackagePath": "staticwebassets\\css\\theme.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\css\\theme.min.css",
+      "PackagePath": "staticwebassets\\css\\theme.min.css"
+    },
+    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\fonts\\cartzilla-icons.svg",
+      "PackagePath": "staticwebassets\\fonts\\cartzilla-icons.svg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\fonts\\cartzilla-icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\cartzilla-icons.ttf"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\fonts\\cartzilla-icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\cartzilla-icons.woff"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\01.jpg",
+      "PackagePath": "staticwebassets\\img\\01.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\02.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\03.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\Banner.jpg",
+      "PackagePath": "staticwebassets\\img\\Banner.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\avatar.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\13.png",
+      "PackagePath": "staticwebassets\\img\\brands\\13.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\14.png",
+      "PackagePath": "staticwebassets\\img\\brands\\14.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\15.png",
+      "PackagePath": "staticwebassets\\img\\brands\\15.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\16.png",
+      "PackagePath": "staticwebassets\\img\\brands\\16.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\17.png",
+      "PackagePath": "staticwebassets\\img\\brands\\17.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\18.png",
+      "PackagePath": "staticwebassets\\img\\brands\\18.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\19.png",
+      "PackagePath": "staticwebassets\\img\\brands\\19.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\brands\\20.png",
+      "PackagePath": "staticwebassets\\img\\brands\\20.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\empty.png",
+      "PackagePath": "staticwebassets\\img\\empty.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\img\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\img\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\footer-logo-light.png",
+      "PackagePath": "staticwebassets\\img\\footer-logo-light.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\logo-dark.png",
+      "PackagePath": "staticwebassets\\img\\logo-dark.png"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\img\\logo-icon.png",
+      "PackagePath": "staticwebassets\\img\\logo-icon.png"
+    },
+    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\js\\theme.min.js",
+      "PackagePath": "staticwebassets\\js\\theme.min.js"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
@@ -277,8 +385,28 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
     },
     {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\a-banh-argentina.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a-banh-argentina.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\a-banh-phap.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a-banh-phap.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-a-banh.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ao-a-banh.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-cap-hoodie.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ao-cap-hoodie.jpg"
+    },
+    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-hoodie-trang-de-thuong.jpg",
       "PackagePath": "staticwebassets\\uploads\\ao-hoodie-trang-de-thuong.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-t1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ao-t1.jpg"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-thun.jpg",
@@ -289,8 +417,24 @@
       "PackagePath": "staticwebassets\\uploads\\hoodie-hong.jpg"
     },
     {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-lam.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hoodie-lam.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-nu-vai-ni.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hoodie-nu-vai-ni.jpg"
+    },
+    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-nu.jpg",
       "PackagePath": "staticwebassets\\uploads\\hoodie-nu.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-rong-cho-nu.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hoodie-rong-cho-nu.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-thuong.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hoodie-thuong.jpg"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\jean-nam.jpg",
@@ -299,6 +443,26 @@
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\jean-rong.jpg",
       "PackagePath": "staticwebassets\\uploads\\jean-rong.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\jean-xam.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jean-xam.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\khoac-hong.jpg",
+      "PackagePath": "staticwebassets\\uploads\\khoac-hong.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\khoac-vang.jpg",
+      "PackagePath": "staticwebassets\\uploads\\khoac-vang.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\khoac-xanh.jpg",
+      "PackagePath": "staticwebassets\\uploads\\khoac-xanh.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\quan-cap.jpg",
+      "PackagePath": "staticwebassets\\uploads\\quan-cap.jpg"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\quan-jean.jpeg",
@@ -327,6 +491,74 @@
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\thun-tay-dai.jpg",
       "PackagePath": "staticwebassets\\uploads\\thun-tay-dai.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\bootstrap\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\drift-zoom\\Drift.min.js",
+      "PackagePath": "staticwebassets\\vendor\\drift-zoom\\Drift.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\drift-zoom\\drift-basic.min.css",
+      "PackagePath": "staticwebassets\\vendor\\drift-zoom\\drift-basic.min.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\imagesloaded\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendor\\imagesloaded\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\lightgallery\\lightgallery-bundle.min.css",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\lightgallery-bundle.min.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\lightgallery\\lightgallery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\lightgallery.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\lightgallery\\plugins\\video\\lg-video.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\plugins\\video\\lg-video.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\lightgallery\\plugins\\zoom\\lg-zoom.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\plugins\\zoom\\lg-zoom.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\nouislider\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\shufflejs\\shuffle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\shufflejs\\shuffle.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\simplebar\\simplebar.min.css",
+      "PackagePath": "staticwebassets\\vendor\\simplebar\\simplebar.min.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\simplebar\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\simplebar\\simplebar.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\smooth-scroll\\smooth-scroll.polyfills.min.js",
+      "PackagePath": "staticwebassets\\vendor\\smooth-scroll\\smooth-scroll.polyfills.min.js"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\tiny-slider\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\vendor\\tiny-slider\\tiny-slider.css"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\vendor\\tiny-slider\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\vendor\\tiny-slider\\tiny-slider.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ITShop.Microsoft.AspNetCore.StaticWebAssets.props",

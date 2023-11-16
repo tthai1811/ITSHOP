@@ -19,6 +19,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.AccessDeniedPath = "/Home/Forbidden";
 });
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options => {
+    options.Cookie.Name = "ITShop.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +40,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();// xac thuc
 app.UseAuthorization();//phan quyen
+app.UseSession();
 app.MapControllerRoute(name: "adminareas", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 app.MapControllerRoute(
     name: "default",

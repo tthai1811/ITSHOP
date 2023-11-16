@@ -14,6 +14,7 @@ namespace ITShop.Models
         {
             ID = n.ID;
             HoVaTen = n.HoVaTen;
+            Email= n.Email;
             DienThoai = n.DienThoai;
             DiaChi = n.DiaChi;
             TenDangNhap = n.TenDangNhap;
@@ -32,24 +33,35 @@ namespace ITShop.Models
         [Required(ErrorMessage = "Họ và tên không được bỏ trống!")]
         [DisplayName("Họ và tên")]
         public string HoVaTen { get; set; }
+
+        [StringLength(255)]
+        [Required(ErrorMessage = "Email không được bỏ trống!")]
+        [DisplayName("Email")]
+        public string Email { get; set; }
+
         [StringLength(20)]
         [DisplayName("Điện thoại")]
         public string? DienThoai { get; set; }
+
         [StringLength(255)]
         [DisplayName("Địa chỉ")]
         public string? DiaChi { get; set; }
+
         [StringLength(50, ErrorMessage = "{0} phải ít nhất {2} ký tự.", MinimumLength = 4)]
         [Required(ErrorMessage = "Tên đăng nhập không được bỏ trống!")]
         [DisplayName("Tên đăng nhập")]
         public string TenDangNhap { get; set; }
+
         [StringLength(255)]
         [DataType(DataType.Password)]
         [DisplayName("Mật khẩu")]
         public string? MatKhau { get; set; }
+
         [Display(Name = "Xác nhận mật khẩu")]
         [Compare("MatKhau", ErrorMessage = "Xác nhận mật khẩu không chính xác!")]
         [DataType(DataType.Password)]
         public string? XacNhanMatKhau { get; set; }
+
         [DisplayName("Quyền")]
         public bool Quyen { get; set; }
     }
@@ -64,6 +76,10 @@ namespace ITShop.Models
 		[DisplayName("Họ và tên")]
 		public string HoVaTen { get; set; }
 
+        [StringLength(255)]
+        [Required(ErrorMessage = "Email không được bỏ trống!")]
+        [DisplayName("Email")]
+        public string Email { get; set; }
 
         [StringLength(20)]
         [RegularExpression("[0-9]{10}", ErrorMessage = " Điện thoại phải là 10 chữ số!")]

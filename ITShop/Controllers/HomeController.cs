@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using BC = BCrypt.Net.BCrypt;
+using Microsoft.EntityFrameworkCore;
+
 namespace ITShop.Controllers
 {
     public class HomeController : Controller
@@ -19,9 +21,11 @@ namespace ITShop.Controllers
             _httpContextAccessor = httpContextAccessor;
         }
         // GET: Index
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return _context.LoaiSanPham != null ?
+            View(await _context.LoaiSanPham.Include(s => s.SanPham).ToListAsync()) :
+            Problem("Entity set 'ITShopDbContext.LoaiSanPham' is null.");
         }
         // GET: Login
         [AllowAnonymous]
