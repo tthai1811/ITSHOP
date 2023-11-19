@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ID]
+      ,[HangSanXuatID]
+      ,[LoaiSanPhamID]
+      ,[TenSanPham]
+      ,[DonGia]
+      ,[SoLuong]
+      ,[HinhAnh]
+      ,[MoTa]
+  FROM [ITShop].[dbo].[SanPham]
