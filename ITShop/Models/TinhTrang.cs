@@ -5,6 +5,7 @@ namespace ITShop.Models
 {
     public class TinhTrang
     {
+
         public int ID { get; set; }
         [StringLength(255)]
 		[Required(ErrorMessage = "không được bỏ trống!")]

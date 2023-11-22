@@ -1,6 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+﻿using ITShop.Logic;
 using ITShop.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +27,10 @@ builder.Services.AddSession(options => {
     options.Cookie.Name = "ITShop.Session";
     options.IdleTimeout = TimeSpan.FromMinutes(15);
 });
+builder.Services.AddTransient<IMailLogic, MailLogic>();
+// Lấy thông tin cấu hình trong tập tin appsettings.json và gán vào đối tượng MailSettings
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WgpIX3d7jLYQfanQIWYkymsWcMEXgHOTCySEWCZXnKQ=",
+  "Hash": "wwIr4106IhMtV9w0j1gPWojDcX9+zWKv1Cl5eucvC+8=",
   "Source": "ITShop",
   "BasePath": "_content/ITShop",
   "Mode": "Default",
@@ -1783,6 +1783,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ao-thun.jpg"
+    },
+    {
+      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\combo-hoodie.jpg",
+      "SourceId": "ITShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
+      "BasePath": "_content/ITShop",
+      "RelativePath": "uploads/combo-hoodie.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\combo-hoodie.jpg"
     },
     {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\hoodie-hong.jpg",
