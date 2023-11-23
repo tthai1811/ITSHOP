@@ -7,19 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
 using Slugify;
-using System.Linq.Dynamic.Core;
 using Microsoft.Extensions.Hosting;
+using System.Linq.Dynamic.Core;
 using Microsoft.AspNetCore.Authorization;
-using System.Data;
 
 namespace ITShop.Areas.Admin.Controllers
 {
-	[Authorize(Roles = "Admin")]
-	[Area("Admin")]
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class SanPhamController : Controller
     {
         private readonly ITShopDbContext _context;
         private readonly IWebHostEnvironment _hostEnvironment;
+
         public SanPhamController(ITShopDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
@@ -29,7 +30,6 @@ namespace ITShop.Areas.Admin.Controllers
         // GET: SanPham
         public async Task<IActionResult> Index()
         {
-
             return View();
         }
         public IActionResult Index_LoadData()
@@ -73,9 +73,9 @@ namespace ITShop.Areas.Admin.Controllers
                 {
                     sanPham = sanPham.Where(r => r.TenLoai.Contains(searchValue) ||
                     r.TenHangSanXuat.Contains(searchValue) ||
-                   r.TenSanPham.Contains(searchValue) ||
-                   r.SoLuong.ToString().Contains(searchValue) ||
-                   r.DonGia.ToString().Contains(searchValue));
+                    r.TenSanPham.Contains(searchValue) ||
+                    r.SoLuong.ToString().Contains(searchValue) ||
+                    r.DonGia.ToString().Contains(searchValue));
                 }
 
                 filterRecords = sanPham.Count();
@@ -95,7 +95,6 @@ namespace ITShop.Areas.Admin.Controllers
                 throw;
             }
         }
-
 
 
         // GET: SanPham/Details/5
@@ -135,21 +134,18 @@ namespace ITShop.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                string path = "Server=DESKTOP-VPSR0NB\\\\SQLEXPRESS;Database=ITShop;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
-                // Nếu hình ảnh không bỏ trống thì upload
+                string path = "";
                 if (sanPham.DuLieuHinhAnh != null)
                 {
                     string wwwRootPath = _hostEnvironment.WebRootPath;
-                    string folder = "/uploads/";
+                    string folder = "/Uploads/";
                     string fileExtension = Path.GetExtension(sanPham.DuLieuHinhAnh.FileName).ToLower();
-
                     string fileName = sanPham.TenSanPham;
-                    SlugHelper slug = new SlugHelper();
 
+                    SlugHelper slug = new SlugHelper();
                     string fileNameSluged = slug.GenerateSlug(fileName);
                     path = fileNameSluged + fileExtension;
                     string physicalPath = Path.Combine(wwwRootPath + folder, fileNameSluged + fileExtension);
-
                     using (var fileStream = new FileStream(physicalPath, FileMode.Create))
                     {
                         await sanPham.DuLieuHinhAnh.CopyToAsync(fileStream);
@@ -198,28 +194,27 @@ namespace ITShop.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-
                 try
                 {
                     string path = "";
                     if (sanPham.DuLieuHinhAnh != null)
                     {
                         string wwwRootPath = _hostEnvironment.WebRootPath;
-                        string folder = "/uploads/";
+                        string folder = "/Uploads/";
                         string fileExtension = Path.GetExtension(sanPham.DuLieuHinhAnh.FileName).ToLower();
-
                         string fileName = sanPham.TenSanPham;
+
                         SlugHelper slug = new SlugHelper();
                         string fileNameSluged = slug.GenerateSlug(fileName);
+
                         path = fileNameSluged + fileExtension;
-
                         string physicalPath = Path.Combine(wwwRootPath + folder, fileNameSluged + fileExtension);
-
                         using (var fileStream = new FileStream(physicalPath, FileMode.Create))
                         {
                             await sanPham.DuLieuHinhAnh.CopyToAsync(fileStream);
                         }
                     }
+
                     _context.Update(sanPham);
                     if (string.IsNullOrEmpty(path))
                         _context.Entry(sanPham).Property(x => x.HinhAnh).IsModified = false;
@@ -280,7 +275,7 @@ namespace ITShop.Areas.Admin.Controllers
                 // Xóa hình ảnh (nếu có)
                 if (!string.IsNullOrEmpty(sanPham.HinhAnh))
                 {
-                    var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "uploads", sanPham.HinhAnh);
+                    var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "Uploads", sanPham.HinhAnh);
                     if (System.IO.File.Exists(imagePath)) System.IO.File.Delete(imagePath);
                 }
                 _context.SanPham.Remove(sanPham);

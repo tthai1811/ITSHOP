@@ -7,7 +7,7 @@
 <div class="card">
     <h5 class="card-header">@ViewData["Title"]</h5>
     <div class="card-body">
-        <form asp-action="Edit">
+        <form asp-action="Edit" >
             <input type="hidden" asp-for="ID" />
             
             <div class="mb-3">
@@ -47,13 +47,13 @@
             <div class="mb-3">
                 @if (!string.IsNullOrEmpty(Model.HinhAnh))
                 {
-
-                    <span class="d-block mb-2"><img src="/uploads/@Model.HinhAnh" width="80" class="img-thumbnail" /></span>
+                    
+                    <span class="d-block mb-2"><img src = "/uploads/@Model.HinhAnh" width="80" class="img-thumbnail" /></span>
                     <span class="d-block mb-2 mt-2 small text-danger">Bỏ trống nếu không muốn cập nhật ảnh mới!</span>
-                }
+                    }
                 <label asp-for="DuLieuHinhAnh" class="control-label"></label>
-                <input asp-for="DuLieuHinhAnh" accept="image/jpeg,image/gif,image/png" class="form-control" />
-                <span asp-validation-for="HinhAnh" class="text-danger"></span>
+                <input asp-for="DuLieuHinhAnh" class="form-control" />
+                <span asp-validation-for="DuLieuHinhAnh" class="text-danger"></span>
             </div>
             
             <div class="mb-3">
@@ -71,14 +71,14 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script src="~/lib/ckeditor5/ckeditor.js"></script>
-    <script>
-        ClassicEditor.create(document.querySelector('#MoTa'), {
-            licenseKey: '',
-        }).then(editor => {
-            window.editor = editor;
-        }).catch(error => {
-            console.error(error);
-        });
-    </script>
 }
+<script src="~/lib/ckeditor5/ckeditor.js"></script>
+<script>
+    ClassicEditor.create(document.querySelector('#MoTa'), {
+        licenseKey: '',
+    }).then(editor => {
+        window.editor = editor;
+    }).catch(error => {
+        console.error(error);
+    });
+</script>

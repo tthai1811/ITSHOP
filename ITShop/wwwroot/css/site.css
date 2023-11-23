@@ -1,35 +1,3 @@
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
-
-:root {
-    --font-family-sans-serif: "Roboto", sans-serif;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-  
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}   
-
-body {
-  margin-bottom: 60px;
-}
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
 
 :root {
@@ -64,7 +32,7 @@ pre, code, kbd, samp, .form-control, form-label, .btn, .dropdown-menu, .input-gr
 
 .table-bordered th, .table-bordered td {
     border: 1px solid #e6e8eb;
-    
+    Trang 13
 }
 
 #export-buttons .buttons-excel {
@@ -75,4 +43,27 @@ pre, code, kbd, samp, .form-control, form-label, .btn, .dropdown-menu, .input-gr
 #export-buttons .buttons-copy {
     border: 1px solid #ced4da;
     margin-left: 3px;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
 }

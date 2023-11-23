@@ -33,10 +33,10 @@
                     <th width="5%">Xóa</th>
                 </tr>
             </thead>
-          
         </table>
     </div>
 </div>
+
 @section Scripts {
  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
@@ -44,8 +44,8 @@
  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>
  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script>
-        var table = $('#datatable').DataTable({
+ <script>
+     var table = $('#datatable').DataTable({
             language: {
                 processing: 'Đang xử lý...',
                 lengthMenu: 'Hiển thị _MENU_ dòng',
@@ -75,12 +75,10 @@
             buttons: [{
                 extend: 'excelHtml5',
                 title: null,
-                filename: 'DanhSachSanPham',
-                action: newexportaction
+                filename: 'DanhSachSanPham'
             }, {
                 extend: 'copyHtml5',
-                title: null,
-                action: newexportaction
+                title: null
             }],
             processing: true,
             serverSide: true,
@@ -117,14 +115,13 @@
                     name: 'HinhAnh',
                     sortable: false, // Không cho sắp xếp
                     render: function (data, type, row, meta) {
-                        return '<img src="/uploads/' + row.HinhAnh + '" width = "60" class="img-thumbnail" />';
+                        return '<img src="/Uploads/' + row.HinhAnh + '" width = "60" class="img-thumbnail" />';
                     }
                 },
                 {
                     // Cột 2: Tên loại sản phẩm
                     data: 'TenLoai',
                     name: 'TenLoai'
-    
          },
                 {
                     // Cột 3: Tên hãng sản xuất
@@ -172,41 +169,9 @@
                 $('#export-buttons .btn').removeClass('btn-secondary').addClass('btn-info');
                 $('#datatable').wrap('<div class="table-responsive"></div>');
             }
-                
-        });
-
-        function newexportaction(e, dt, button, config) {
-            var self = this;
-            var oldStart = dt.settings()[0]._iDisplayStart;
-            dt.one('preXhr', function (e, s, data) {
-                // Just this once, load all data from the server...
-                data.start = 0;
-                data.length = 2147483647;
-                dt.one('preDraw', function (e, settings) {
-                    // Call the original action function
-                    if (button[0].className.indexOf('buttons-copy') >= 0) {
-                        $.fn.dataTable.ext.buttons.copyHtml5.action.call(self, e, dt, button, config);
-                    } else if (button[0].className.indexOf('buttons-excel') >= 0) {
-                        $.fn.dataTable.ext.buttons.excelHtml5.available(dt, config) ?
-                            $.fn.dataTable.ext.buttons.excelHtml5.action.call(self, e, dt, button, config) :
-                            $.fn.dataTable.ext.buttons.excelFlash.action.call(self, e, dt, button, config);
-                   
-                    }
-                    dt.one('preXhr', function (e, s, data) {
-                        // DataTables thinks the first item displayed is index 0, but we're not drawing that.
-                        // Set the property to what it was before exporting.
-                        settings._iDisplayStart = oldStart;
-                        data.start = oldStart;
-                    });
-                    // Reload the grid with the original page. Otherwise, API functions like table.cell(this) don't work properly.
-                    setTimeout(dt.ajax.reload, 0);
-                    // Prevent rendering of the full data to the DOM
-                    return false;
-                });
-            });
-            // Requery the server with the new one-time export settings
-            dt.ajax.reload();
-        };
-    </script>
+        }); 
+        table.buttons().container().appendTo('#export-buttons');
+        $('#export-buttons .btn').removeClass('btn-secondary').addClass('btn-success');
+        $('#datatable').wrap('<div class="table-responsive"></div>');
+ </script>
  }
-

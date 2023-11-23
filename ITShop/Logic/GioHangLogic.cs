@@ -8,12 +8,10 @@ namespace ITShop.Logic
         private const string _sessionKey = "Cart";
         private readonly ITShopDbContext _context;
         private readonly HttpContext _httpContext = new HttpContextAccessor().HttpContext;
-
         public GioHangLogic(ITShopDbContext context)
         {
             _context = context;
         }
-
         // Lấy tên đăng nhập của người dùng
         // Nếu chưa đăng nhập thì phát sinh mã ngẫu nhiên
         // Nếu người dùng đã đăng nhập thì trả về tên đăng nhập.
@@ -21,8 +19,7 @@ namespace ITShop.Logic
         {
             if (string.IsNullOrEmpty(_httpContext.Session.GetString(_sessionKey)))
             {
-
-                if (!string.IsNullOrWhiteSpace(_httpContext.User.Identity.Name))
+            if (!string.IsNullOrWhiteSpace(_httpContext.User.Identity.Name))
                 {
                     _httpContext.Session.SetString(_sessionKey, _httpContext.User.Identity.Name);
                 }
@@ -34,7 +31,6 @@ namespace ITShop.Logic
             }
             return _httpContext.Session.GetString(_sessionKey);
         }
-
         public decimal LayTongTienSanPham()
         {
             _tenDangNhap = LayTenDangNhap();
@@ -44,7 +40,6 @@ namespace ITShop.Logic
                                   select (decimal?)r.SoLuongTrongGio * r.SanPham.DonGia).Sum();
             return tongTien ?? decimal.Zero;
         }
-
         public int LayTongSoLuong()
         {
             _tenDangNhap = LayTenDangNhap();
@@ -54,13 +49,11 @@ namespace ITShop.Logic
                                  select (int?)r.SoLuongTrongGio).Sum();
             return tongSoLuong ?? 0;
         }
-
         public List<GioHang> LayGioHang()
         {
             _tenDangNhap = LayTenDangNhap();
             return _context.GioHang.Where(r => r.TenDangNhap == _tenDangNhap).Include(s => s.SanPham).ToList();
         }
-
         public void ThemSanPham(int maSanPham)
         {
             _tenDangNhap = LayTenDangNhap();
@@ -68,15 +61,14 @@ namespace ITShop.Logic
             if (gioHang == null)
             {
                 gioHang = new GioHang
-
-                {
+            {
                     ID = Guid.NewGuid().ToString(),
                     TenDangNhap = _tenDangNhap,
                     SanPhamID = maSanPham,
                     SanPham = _context.SanPham.SingleOrDefault(r => r.ID == maSanPham),
                     SoLuongTrongGio = 1,
                     ThoiGian = DateTime.Now
-                };
+            };
                 _context.GioHang.Add(gioHang);
             }
             else
@@ -85,7 +77,6 @@ namespace ITShop.Logic
             }
             _context.SaveChanges();
         }
-
         public void XoaSanPham(string id)
         {
             try
@@ -102,7 +93,6 @@ namespace ITShop.Logic
                 throw new Exception(ex.Message.ToString());
             }
         }
-
         public void CapNhatSoLuong(string id, int soLuong)
         {
             try
@@ -115,8 +105,7 @@ namespace ITShop.Logic
                     else if (soLuong > 10)
                         gioHang.SoLuongTrongGio = 10;
                     else
-
-                        gioHang.SoLuongTrongGio = soLuong;
+                gioHang.SoLuongTrongGio = soLuong;
                     _context.SaveChanges();
                 }
             }
@@ -125,7 +114,6 @@ namespace ITShop.Logic
                 throw new Exception(ex.Message.ToString());
             }
         }
-
         public void CapNhatSoLuong(string id, bool giamSoLuong = false)
         {
             try
@@ -158,11 +146,9 @@ namespace ITShop.Logic
                 throw new Exception(ex.Message.ToString());
             }
         }
-
         public void XoaTatCa()
         {
             try
-
             {
                 _tenDangNhap = LayTenDangNhap();
                 var gioHang = _context.GioHang.Where(r => r.TenDangNhap == _tenDangNhap);

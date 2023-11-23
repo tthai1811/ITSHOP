@@ -44,11 +44,11 @@
             
             <div class="mb-3">
                 <label asp-for="DuLieuHinhAnh" class="control-label"></label>
-                <input asp-for="DuLieuHinhAnh" class="form-control" />
+                <input asp-for="DuLieuHinhAnh" accept="image/jpeg,image/gif,image/png" class="form-control" />
                 <span asp-validation-for="DuLieuHinhAnh" class="text-danger"></span>
             </div>
             
-            <div class="mb-3">
+            <div class="mb-3" >
                 <label asp-for="MoTa" class="control-label"></label>
                 <textarea asp-for="MoTa" class="form-control"></textarea>
                 <span asp-validation-for="MoTa" class="text-danger"></span>
@@ -63,7 +63,7 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script src="~/lib/ckeditor5/ckeditor.js"></script>
+    <script src="/lib/ckeditor5/ckeditor.js"></script>
     <script>
         ClassicEditor.create(document.querySelector('#MoTa'), {
             licenseKey: '',

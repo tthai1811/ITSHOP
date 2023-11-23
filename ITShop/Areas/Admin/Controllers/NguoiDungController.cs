@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using BC = BCrypt.Net.BCrypt;
 using ITShop.Models;
+using BC = BCrypt.Net.BCrypt;
 using Microsoft.AspNetCore.Authorization;
-using System.Data;
 
 namespace ITShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	[Authorize(Roles = "Admin")]
-	public class NguoiDungController : Controller
+    [Authorize(Roles = "Admin")]
+
+    public class NguoiDungController : Controller
     {
         private readonly ITShopDbContext _context;
 
@@ -86,8 +86,8 @@ namespace ITShop.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
             return View(new NguoiDung_ChinhSua(nguoiDung));
+
         }
 
         // POST: NguoiDung/Edit/5
@@ -95,7 +95,7 @@ namespace ITShop.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,HoVaTen,DienThoai,DiaChi,TenDangNhap,MatKhau,XacNhanMatKhau,Quyen")] NguoiDung_ChinhSua nguoiDung)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,HoVaTen,DienThoai,DiaChi,TenDangNhap,XacNhanMatKhau,Quyen")] NguoiDung_ChinhSua nguoiDung)
         {
             if (id != nguoiDung.ID)
             {
@@ -107,12 +107,10 @@ namespace ITShop.Areas.Admin.Controllers
                 try
                 {
                     var n = await _context.NguoiDung.FindAsync(id);
-
                     // Giữ nguyên mật khẩu cũ
                     if (nguoiDung.MatKhau == null)
                     {
-                        n.ID = nguoiDung.ID;
-                        n.HoVaTen = nguoiDung.HoVaTen;
+                        n.ID = nguoiDung.ID; n.HoVaTen = nguoiDung.HoVaTen;
                         n.DienThoai = nguoiDung.DienThoai;
                         n.DiaChi = nguoiDung.DiaChi;
                         n.TenDangNhap = nguoiDung.TenDangNhap;
@@ -128,11 +126,8 @@ namespace ITShop.Areas.Admin.Controllers
                         n.TenDangNhap = nguoiDung.TenDangNhap;
                         n.MatKhau = BC.HashPassword(nguoiDung.MatKhau);
                         n.XacNhanMatKhau = BC.HashPassword(nguoiDung.MatKhau);
-
-                        n.XacNhanMatKhau = nguoiDung.XacNhanMatKhau;
                         n.Quyen = nguoiDung.Quyen;
                     }
-
                     _context.Update(n);
                     await _context.SaveChangesAsync();
                 }

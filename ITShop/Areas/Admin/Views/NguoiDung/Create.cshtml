@@ -13,6 +13,12 @@
                 <input asp-for="HoVaTen" class="form-control" />
                 <span asp-validation-for="HoVaTen" class="text-danger"></span>
             </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
             
             <div class="mb-3">
                 <label asp-for="DienThoai" class="control-label"></label>
@@ -42,7 +48,7 @@
                 <input asp-for="XacNhanMatKhau" class="form-control" />
                 <span asp-validation-for="XacNhanMatKhau" class="text-danger"></span>
             </div>
-            
+
             <div class="mb-3 form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Quyen" /> Thiết lập quyền Quản lý

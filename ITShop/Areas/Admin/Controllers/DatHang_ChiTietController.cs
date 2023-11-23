@@ -6,13 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Models;
-using Microsoft.AspNetCore.Authorization;
-using System.Data;
 
 namespace ITShop.Areas.Admin.Controllers
 {
-	[Authorize(Roles = "Admin")]
-	[Area("Admin")]
+    [Area("Admin")]
     public class DatHang_ChiTietController : Controller
     {
         private readonly ITShopDbContext _context;
