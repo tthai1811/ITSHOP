@@ -397,12 +397,20 @@
       "PackagePath": "staticwebassets\\uploads\\ao-a-banh.jpg"
     },
     {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-buh.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ao-buh.jpg"
+    },
+    {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-cap-hoodie.jpg",
       "PackagePath": "staticwebassets\\uploads\\ao-cap-hoodie.jpg"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-hoodie-trang-de-thuong.jpg",
       "PackagePath": "staticwebassets\\uploads\\ao-hoodie-trang-de-thuong.jpg"
+    },
+    {
+      "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-somi.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ao-somi.jpg"
     },
     {
       "Id": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-t1.jpg",

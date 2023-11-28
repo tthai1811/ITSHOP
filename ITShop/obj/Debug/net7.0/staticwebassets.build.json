@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wwIr4106IhMtV9w0j1gPWojDcX9+zWKv1Cl5eucvC+8=",
+  "Hash": "G4A+gT6znMCjeeXWDhi4CEXJkfS2tGseH/faj3xm7cc=",
   "Source": "ITShop",
   "BasePath": "_content/ITShop",
   "Mode": "Default",
@@ -1717,6 +1717,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ao-a-banh.jpg"
     },
     {
+      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-buh.jpg",
+      "SourceId": "ITShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
+      "BasePath": "_content/ITShop",
+      "RelativePath": "uploads/ao-buh.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ao-buh.jpg"
+    },
+    {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-cap-hoodie.jpg",
       "SourceId": "ITShop",
       "SourceType": "Discovered",
@@ -1749,6 +1766,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ao-hoodie-trang-de-thuong.jpg"
+    },
+    {
+      "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-somi.jpg",
+      "SourceId": "ITShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\",
+      "BasePath": "_content/ITShop",
+      "RelativePath": "uploads/ao-somi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ao-somi.jpg"
     },
     {
       "Identity": "D:\\Downloads\\ITShop\\ITShop\\wwwroot\\uploads\\ao-t1.jpg",

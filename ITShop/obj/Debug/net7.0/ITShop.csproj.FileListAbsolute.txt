@@ -263,3 +263,4 @@ D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\MailKit.dll
 D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\MimeKit.dll
 D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Downloads\ITShop\ITShop\bin\Debug\net7.0\SlugGenerator.dll

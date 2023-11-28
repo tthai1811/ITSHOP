@@ -16,6 +16,7 @@ namespace ITShop.Areas.Admin.Controllers
 {
 	[Authorize(Roles = "Admin")]
 	[Area("Admin")]
+
     public class SanPhamController : Controller
     {
         private readonly ITShopDbContext _context;

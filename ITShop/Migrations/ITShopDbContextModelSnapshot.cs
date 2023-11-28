@@ -22,6 +22,116 @@ namespace ITShop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ITShop.Models.BaiViet", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("ChuDeID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("HienThi")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("KiemDuyet")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LuotXem")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NgayDang")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NguoiDungID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NoiDung")
+                        .IsRequired()
+                        .HasColumnType("ntext");
+
+                    b.Property<string>("TieuDe")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("TieuDeKhongDau")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("TomTat")
+                        .IsRequired()
+                        .HasColumnType("ntext");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ChuDeID");
+
+                    b.HasIndex("NguoiDungID");
+
+                    b.ToTable("BaiViet", (string)null);
+                });
+
+            modelBuilder.Entity("ITShop.Models.BinhLuanBaiViet", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("BaiVietID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("KiemDuyet")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LuotXem")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NgayDang")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NguoiDungID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NoiDungBinhLuan")
+                        .IsRequired()
+                        .HasColumnType("ntext");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("BaiVietID");
+
+                    b.HasIndex("NguoiDungID");
+
+                    b.ToTable("BinhLuanBaiViet", (string)null);
+                });
+
+            modelBuilder.Entity("ITShop.Models.ChuDe", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("TenChuDe")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("TenChuDeKhongDau")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("ChuDe", (string)null);
+                });
+
             modelBuilder.Entity("ITShop.Models.DatHang", b =>
                 {
                     b.Property<int>("ID")
@@ -253,6 +363,44 @@ namespace ITShop.Migrations
                     b.ToTable("TinhTrang", (string)null);
                 });
 
+            modelBuilder.Entity("ITShop.Models.BaiViet", b =>
+                {
+                    b.HasOne("ITShop.Models.ChuDe", "ChuDe")
+                        .WithMany("BaiViet")
+                        .HasForeignKey("ChuDeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ITShop.Models.NguoiDung", "NguoiDung")
+                        .WithMany("BaiViet")
+                        .HasForeignKey("NguoiDungID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ChuDe");
+
+                    b.Navigation("NguoiDung");
+                });
+
+            modelBuilder.Entity("ITShop.Models.BinhLuanBaiViet", b =>
+                {
+                    b.HasOne("ITShop.Models.BaiViet", "BaiViet")
+                        .WithMany("BinhLuanBaiViet")
+                        .HasForeignKey("BaiVietID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ITShop.Models.NguoiDung", "NguoiDung")
+                        .WithMany("BinhLuanBaiViet")
+                        .HasForeignKey("NguoiDungID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaiViet");
+
+                    b.Navigation("NguoiDung");
+                });
+
             modelBuilder.Entity("ITShop.Models.DatHang", b =>
                 {
                     b.HasOne("ITShop.Models.NguoiDung", "NguoiDung")
@@ -321,6 +469,16 @@ namespace ITShop.Migrations
                     b.Navigation("LoaiSanPham");
                 });
 
+            modelBuilder.Entity("ITShop.Models.BaiViet", b =>
+                {
+                    b.Navigation("BinhLuanBaiViet");
+                });
+
+            modelBuilder.Entity("ITShop.Models.ChuDe", b =>
+                {
+                    b.Navigation("BaiViet");
+                });
+
             modelBuilder.Entity("ITShop.Models.DatHang", b =>
                 {
                     b.Navigation("DatHang_ChiTiet");
@@ -338,6 +496,10 @@ namespace ITShop.Migrations
 
             modelBuilder.Entity("ITShop.Models.NguoiDung", b =>
                 {
+                    b.Navigation("BaiViet");
+
+                    b.Navigation("BinhLuanBaiViet");
+
                     b.Navigation("DatHang");
                 });
 

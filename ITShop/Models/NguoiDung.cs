@@ -113,10 +113,13 @@ namespace ITShop.Models
         [DisplayName("Quyền")]
         public bool Quyen { get; set; }
         public ICollection<DatHang>? DatHang { get; set; }
+		public ICollection<BaiViet>? BaiViet { get; set; }
+		public ICollection<BinhLuanBaiViet>? BinhLuanBaiViet { get; set; }
 
-    }
 
-    [NotMapped]
+	}
+
+	[NotMapped]
     public class DangNhap
     {
         [StringLength(50, ErrorMessage = "{0} phải ít nhất {2} ký tự.", MinimumLength = 4)]

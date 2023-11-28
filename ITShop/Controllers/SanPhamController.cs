@@ -48,7 +48,7 @@ namespace ITShop.Controllers
 			if (sanPham == null)
 				return NotFound();
 			else
-				return View(sanPham);
+				return View(sanPham);	
 		}
 		// GET: PhanLoai
 		public IActionResult PhanLoai(int? trang, string tenLoai)

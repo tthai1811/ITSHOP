@@ -94,14 +94,7 @@
 								</li>
 							</ul>
 							<ul class="navbar-nav">
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" asp-area="" asp-controller="SanPham" asp-action="Index" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ci-gift me-2"></i>Sản phẩm</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" asp-area="" asp-controller="SanPham" asp-action="PhanLoai" asp-route-tenLoai="ao-khoac">Áo Khoác</a></li>
-										<li><a class="dropdown-item" asp-area="" asp-controller="SanPham" asp-action="PhanLoai" asp-route-tenLoai="ao-thun">Áo Thun</a></li>
-										<li><a class="dropdown-item" asp-area="" asp-controller="SanPham" asp-action="PhanLoai" asp-route-tenLoai="quan-jean">Quần jean</a></li>
-									</ul>
-								</li>
+								@await Component.InvokeAsync("LoaiSanPham")
 								<li class="nav-item">
 									<a class="nav-link" asp-area="" asp-controller="BaiViet" asp-action="Index"><i class="ci-globe me-2"></i>Tin tức</a>
 								</li>
