@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ITShop.Models.ChuDe>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" asp-area="" asp-controller="BaiViet" asp-action="Index" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ci-globe me-2"></i>Sản phẩm</a>
+    <ul class="dropdown-menu">
+        @foreach (var item in Model)
+        {
+            <li><a class="dropdown-item" asp-area="" asp-controller="BaiViet" asp-action="ChuDe" asp-route-tenChuDe="@item.TenChuDeKhongDau">@item.TenChuDe</a></li>
+        }
+    </ul>
+</li>
